@@ -2,19 +2,48 @@
 let botScores = 0;
 let playerScores = 0;
 let message;
+let playerChoice = '';
+let botChoice = '';
 
 //query selectors
 let buttons = document.querySelectorAll('.btn');
-let playerChoice = document.querySelector('#your-selection');
-let botChoice = document.querySelector('#bot-selection');
+let playerChoiceText = document.querySelector('#your-selection');
+let botChoiceText = document.querySelector('#bot-selection');
 let scores = document.querySelector('#scores');
+
+
+//add event listener
+
+buttons.forEach(function(btn){
+    btn.addEventListener('click', function(){ 
+        playerChoice = btn.value;
+        console.log(playerChoice);
+     } )  
+})
+
+
+
 
 //functions
 function gettingBotChoice(){
-
+    let randomNumber = Math.floor(Math.random()*3); 
+    switch (randomNumber){
+        case 0 :
+            botChoice = 'rock';
+            break;
+        case 1 :
+            botChoice = 'paper';
+            break;
+        case 2 :
+            botChoice = 'scissors';       
+    }
+    return botChoice;
 }
-function compareChoices(){
+//test bot choice
+console.log(gettingBotChoice());
+function compareChoices(botChoice,playerChoice){
     //logic for who wins in each round
+
     //return 0 for bot point return 1 for player point 
 }
 function countPoints(compareChoices){
@@ -33,7 +62,7 @@ function restartGame (){
     restartBtn.innerText = 'restart';
     //append it to message
 }
-//add event listener
+
 
 
 
