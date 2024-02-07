@@ -1,0 +1,27 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCF6BD;
+}
+
+
+.container{
+    background-color: #E4C1F9;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    
+}
+button{
+    font-size: x-large;
+    padding: 10px;
+    background-color: #A9DEF9;
+    border: 10px #ffd6a5 dotted ;
+}
