@@ -25,3 +25,9 @@ button{
     background-color: #A9DEF9;
     border: 10px #ffd6a5 dotted ;
 }
+.restartBtn{
+    font-size: medium;
+    padding: 5px;
+    background-color: #A9DEF9;
+    border:5px #ffd6a5 solid;
+}
